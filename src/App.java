@@ -1,3 +1,9 @@
+
+import Filtrabili.FiltraIniziaConA;
+import Filtrabili.FiltraparoleLunghe;
+import java.util.ArrayList;
+import java.util.List;
+
 public class App {
     public static void main(String[] args) throws Exception {
     //   Interi i1= new Interi(new int[]{1,2,3,4,5,6,7});
@@ -57,6 +63,24 @@ public class App {
       // controllore.eseguiIncremento(c1);
       // System.out.println("il numero del contatore è "+ c1.getContatore());
 
+      List<String> l1=new ArrayList<>();
+      FiltraparoleLunghe filtraparoleLunghe = new FiltraparoleLunghe();
+      FiltraIniziaConA filtraA =new FiltraIniziaConA();
+      l1.add("Cane");
+      l1.add("Albero");
+      l1.add("Amore");
+      l1.add("Scimmia");
+      l1.add("Carcere");
+      l1.add("Uno");
+      l1.add("Ancora");
+      l1.add("Amo");
+
+      System.out.println(l1);
+
+
+      System.out.println( FiltraIniziaConA.filtraParola(l1, filtraparoleLunghe));
+      System.out.println( FiltraIniziaConA.filtraParola(l1, filtraA));
+      
 
 
       
